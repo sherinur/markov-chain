@@ -48,8 +48,9 @@ Constraints:
     The code should stop generating code after it printed maximum number of words or encountered the very last word in the text.
 
 Examples:
+
     $ cat the_great_gatsby.txt | ./markovchain | cat -e
-    Chapter 1 In my younger and more stable, become for a job. He hadn't eat anything for a long, silent time. It was the sound of someone splashing after us over the confusion a long many-windowed room which overhung the terrace. Eluding Jordan's undergraduate who was well over sixty, and Maurice A. Flink and the great bursts of leaves growing on the air now. "How do you want? What do you like Europe?" she exclaimed surprisingly. "I just got here a minute. "Yes." He hesitated. "Was she killed?" "Yes." "I thought you didn't, if you'll pardon my--you see, I carry$
+    Chapter 1 In my younger and more stable, become for a job. He hadn't eat anything for a long, silent time. It was the sound of someone splashing after us over the confusion a long many-windowed room which overhung the terrace. Eluding Jordan's undergraduate who was     well over sixty, and Maurice A. Flink and the great bursts of leaves growing on the air now. "How do you want? What do you like Europe?" she exclaimed surprisingly. "I just got here a minute. "Yes." He hesitated. "Was she killed?" "Yes." "I thought you didn't, if       you'll pardon my--you see, I carry$
 
     $ cat the_great_gatsby.txt | ./markovchain | wc -w
     100
@@ -79,6 +80,7 @@ Constraints:
     If any error print an error message indicating the reason.
 
 Example: 
+
     $ cat the_great_gatsby.txt | ./markovchain -w 10 -p "to play" | cat -e
     to play for you in that vast obscurity beyond the$
 
@@ -99,6 +101,7 @@ Example:
 Outcomes:
     Program prints usage text.
 Example:
+
     $ ./markovchain --help
     Markov Chain text generator.
 
